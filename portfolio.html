@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Overpass:wght@500;600&family=Pacifico&family=Poppins:wght@400;500&family=Roboto+Slab:wght@700&display=swap"
+        rel="stylesheet">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        .navfont {
+            font-size: 20px;
+
+        }
+
+        body {
+            background-color: black;
+            color: whitesmoke;
+        }
+
+        .abc:hover {
+            background-color: deeppink;
+        }
+
+        .bod
+        {
+            background: #0d0b10;
+            border:2px solid white;
+            box-shadow:1px 3px 8px 7px #4a09b9;
+            animation: MoveUpDown 10s linear infinite;
+             animation-duration: 4s;
+            position: relative;
+             left: 0;
+             bottom: 0;
+            /* box-shadow: 7px 7px 6px 0px #5c1ccc inset; */
+            
+        }
+        .pyc
+        {
+            background: #0d0b10;
+            border:2px solid white;
+            box-shadow:1px 3px 8px 7px #4a09b9;
+            animation: Movepython 10s linear infinite;
+            animation-duration:4s;
+            position:relative;
+            left:0;
+            bottom:0;
+        }
+        .bod:hover
+        {
+            border: 2px solid #e62d6c;
+            cursor:pointer;
+            /* box-shadow: 5px 4px 7px 0px #19cb21; */
+            box-shadow:1px 3px 8px 7px #ed19ed;
+            transform: matrix(10);
+        }
+        .ccolor
+        {
+            background: #e62214;
+        color: ghostwhite;
+        box-shadow:1px 1px 5px 3px #d8c2d8;
+        }
+
+        .cpc
+        {
+            background: #031620;
+        }
+        
+        .bsc
+        {
+            /* box-shadow:1px 3px 8px 7px #4a09b9; */
+          box-shadow: -3px 5px 26px 15px#5d507a inset;
+        }
+
+        .im
+        {
+            box-shadow: 1px 3px 8px 7px #e1961f;
+         border: 4px solid #ef4c3a;
+         animation: updown 2s linear infinite;
+         position:relative;
+         animation-delay: 3s;
+         animation-direction: alternate;
+       /*  animation-duration: 3s;*/
+         
+        }
+
+        #linkedin
+        {
+            animation: updown 2s linear infinite;
+         position:relative;
+         
+        }
+
+        @keyframes updown {
+  0%, 100% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 20px;
+  }
+}
+
+
+        @keyframes MoveUpDown {
+  0%, 100% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 50px;
+    box-shadow:1px 3px 8px 7px #ed19ed;
+    right:340px;
+  }
+  
+  25%
+  {
+    transform: translateX(-70px) rotate(-45deg);
+    box-shadow:1px 3px 8px 7px #0aced1;
+    position: relative;
+   
+  }
+  75%
+  {
+    box-shadow:1px 3px 8px 7px #ddb60b;
+    transform: translateX(70px) rotate(45deg);
+  }
+  85%
+  {
+    
+  }
+}
+        
+
+@keyframes Movepython {
+  0%, 100% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 50px;
+    box-shadow:1px 3px 8px 7px #ed19ed;
+    right:340px;
+  }
+  
+  25%
+  {
+    transform: translateX(70px) rotate(45deg);
+    box-shadow:1px 3px 8px 7px #0aced1;
+    position: relative;
+   
+  }
+  75%
+  {
+    box-shadow:1px 3px 8px 7px #ddb60b;
+    transform: translateX(-70px) rotate(-45deg);
+  }
+  85%
+  {
+    
+  }
+}
+
+   #owner
+   {
+    color: #f84811;
+   }
+
+
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg  bg-black navbar-dark fixed-top pt-3 ">
+        <div class="container mt-2">
+            <a class="navbar-brand ms-4 fs-3 " href="#">Aditya</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon text-warning"></span>
+            </button>
+            <div class="collapse navbar-collapse me-4" id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto mb-2 mb-lg-0 text-center ">
+                    <li class="nav-item p-3 me-1">
+                        <a class="nav-link active px-1 navfont"  aria-current="page" href="#ho">Home</a>
+                    </li>
+                    <li class="nav-item p-3 me-1 ">
+                        <a class="nav-link active px-2 navfont"  aria-current="page" href="#about">About</a>
+                    </li>
+                    <li class="nav-item p-3 me-1">
+                        <a class="nav-link active px-2 navfont"  aria-current="page" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item p-3 me-1">
+                        <a class="nav-link active px-2 navfont"  aria-current="page" href="#projects">Project's</a>
+                    </li>
+                    <li class="nav-item p-3 me-1">
+                        <a class="nav-link active px-2 navfont" aria-current="page" href="#contacts">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="home mt-5 p-4 pb-5 pt-5" id="ho">
+        <div class="container " data-aos="fade-down">
+            <div class="row pt-4">
+                <div class="col-sm-12 col-md-6 col-lg-6 col-12 py-0 my-0 mt-1 pb-3 pt-5">
+                    <h2 class="mb-3" style="font-family: 'Pacifico'; font-size:45px; color: #e62d6c;">Hello ,</h2>
+                    <h1 style="font-family: overpass;color: #088df6;">I'm Aditya Matkar</h1>
+                    <h3>Software Developer</h3>
+                    <p class="pt-2 fs-5 text-warning">I am passionate Software Developer whose interest lie's in
+                        making beautiful software's for the client's. Being a good
+                        engineer i keep on learning new things Daily.
+                    </p>
+                    <div class="pt-1 pb-5 mb-2">
+                        <a href="#" class="btn btn-outline-primary ms-2 p-2 px-2"><i
+                                class="fa fa-linkedin fs-4 text-white "></i></a>
+                        <a href="https://github.com/adityamkr"
+                            class="btn btn-outline-white ms-2 p-2 px-2 border-white abc"><i
+                                class="fa fa-github fs-4 text-white "></i></a>
+                        <a href="https://instagram.com/adi__mkr?igshid=MzNlNGNkZWQ4Mg=="
+                            class="btn btn-outline-danger ms-2 p-2 px-2"><i
+                                class="fa fa-instagram fs-4 text-white "></i></a>
+                        <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=GTvVlcSHwsPVzCvJMSzHZzHfSGtBbrrmRcTCvtmljknJnZSLrWJDpjvFPvkXxVGzjmxLhmgSSqGCV" class="btn btn-outline-warning ms-2 p-2 px-2"><i
+                                class="fa fa-envelope fs-4 text-white "></i></a>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-6 col-12  text-center py-0 my-0 pt-5">
+                    <div >
+                        <img class="img-fluid im rounded-5 ms-1" src="g.jpg" style="height:300px;" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about mt-5 pb-5 mt-3" id="about">
+        <div class="container pt-5 mb-3 p-0 pb-0">
+            <h3 class="text-center pb-2 pt-2 mt-2">What Do I do ?  <i class=" fa fa-hand-o-down text-danger"></i></h3>
+            <div class="row pt-3">
+                <div class="col-sm-12 col-md-6 col-lg-6 col-12 mt-3"  data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine">
+                    <img class="img-fluid"
+                        src="man.png"
+                        style="width: 1000px;;" alt="">
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-6 col-12 mt-5"data-aos="fade-left"
+                data-aos-anchor="#example-anchor"
+                data-aos-offset="500"
+                data-aos-duration="500">
+                    <ul class="nav nav-tabs text-center  justify-content-center" id="myTab "
+                        style="text-decoration: none;">
+                        <li class="nav-item justify-content-between m-1" style="text-decoration: none;">
+                            <a href="#home" class="nav-link active" data-bs-toggle="tab">Education</a>
+                        </li>
+                        <li class="nav-item justify-content-between m-1" style="text-decoration: none;">
+                            <a href="#profile" class="nav-link" data-bs-toggle="tab">Work</a>
+                        </li>
+
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane fade show active" id="home">
+                            <li class="py-3 mt-2 text-warning ps-1 ">Final year engineering student at Mumbai University.
+                            </li>
+                            <li class="py-3 mt-2  text-warning ps-1 ">Has Completed schooling with A grade.</li>
+                            <li class="py-3 mt-2  text-warning ps-1 ">Attended various technical seminars.</li>
+                        </div>
+                        <div class="tab-pane fade" id="profile">
+
+                            <li class="py-3 mt-2 ps-1 text-warning ">Currently working as a Intern at Prayog.</li>
+                            <li class="py-3 mt-2 ps-1 text-warning  ">Have Completed various technology Certifications.
+                            </li>
+                            <li class="py-3 mt-2 ps-1 text-warning">Works as a Freelancer</li>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills mt-0" id="skills">
+       <div class="container py-4  text-center">
+        <h3 class="mb-4 pb-2">My SkillSet <i class="fa fa-superpowers text-warning"></i></h3>
+        <div class="row  m-auto py-5">
+            <div class="col-sm-12 col-lg-3 col-md-3 col-12 mx-auto">
+                <div class="card mx-auto p-3  my-2 mb-4 bod" style="width: 10rem;height:11rem;">
+                    <img src="https://www.blockachain.gr/wp-content/uploads/2018/03/java-coffee-cup-logo.png" class="card-img-top" alt="...">
+                    <p class="text-center text-white">JAVA</p>
+                </div>
+            </div>
+            <div class="col-sm-12 col-lg-3 col-md-3 col-12 mx-auto">
+                <div class="card mx-auto p-3  my-2 mb-4 pyc" style="width: 10rem;height:11rem;">
+                    <img src="python.png" class="card-img-top" alt="...">
+                    <p class="text-center text-white">PYTHON</p>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-lg-3 col-md-3 col-12 mx-auto">
+                <div class="card mx-auto p-3 my-2 mb-4 bod" style="width: 10rem;height:11rem;">
+                    <img src="js.png" class="card-img-top  " alt="...">
+                    <p class="text-center text-white">JAVASCRIPT</p>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-lg-3 col-md-3 col-12 mx-auto">
+                <div class="card mx-auto p-3  my-2  mb-4 pyc" style="width: 10rem;height:11rem;">
+                    <img src="html.png" alt="...">
+                    <p class="text-center text-white">HTML</p>
+                </div>
+            </div>
+
+            
+            <div class="col-sm-12 col-lg-3 col-md-3 col-12 mx-auto">
+                <div class="card mx-auto p-3  my-2  mb-4 bod" style="width: 10rem;height:11rem;">
+                    <img src="css.png" class="card-img-top " alt="...">
+                    <p class="text-center text-white">CSS</p>
+                </div>
+            </div>
+
+            
+            <div class="col-sm-12 col-lg-3 col-md-3 col-12 mx-auto">
+                <div class="card mx-auto p-3 my-2  mb-4 pyc" style="width: 10rem;height:11rem;">
+                    <img src="react.png" class="card-img-top" alt="...">
+                    <p class="text-center text-white">React JS</p>
+                </div>
+            </div>
+
+            
+            <div class="col-sm-12 col-lg-3 col-md-3 col-12 mx-auto">
+                <div class="card mx-auto p-3  my-2  mb-4 bod" style="width: 10rem;height:11rem;">
+                    <img src="node.png" class="card-img-top" alt="...">
+                    <p class="text-center text-white">Node JS</p>
+                </div>
+            </div>
+
+            
+            <div class="col-sm-12 col-lg-3 col-md-3 col-12 mx-auto">
+                <div class="card mx-auto p-3  my-2  mb-4 pyc" style="width: 10rem;height:11rem;">
+                    <img src="express.png" class="card-img-top " alt="...">
+                    <p class="text-center text-white">Express JS</p>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-lg-3 col-md-3 col-12">
+                <div class="card mx-auto p-3  my-2  mb-4 bod" style="width: 10rem;height:11rem;">
+                    <img src="db.png"class="card-img-top"  alt="...">
+                    <p class="text-center text-white">SQL / PLSQL</p>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-lg-3 col-md-3 col-12 ">
+                <div class="card mx-auto p-3  my-2  mb-4 pyc" style="width: 10rem;height:11rem;">
+                    <img src="https://viget.imgix.net/mongo-logo.png?auto=format%2Ccompress&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=1280&ixlib=php-2.1.1&q=90&w=1280&s=a153c7c80f42ab1e7db7fd2b6a27ab3b" class="card-img-top" alt="...">
+                    <p class="text-center text-white">Mongo DB</p>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-lg-3 col-md-3 col-12 ">
+                <div class="card mx-auto p-3  my-2  mb-4 bod" style="width: 10rem;height:11rem;">
+                    <img src="bs.png" class="card-img-top" alt="...">
+                    <p class="text-center text-white">BootStrap</p>
+                </div>
+            </div>
+
+        </div>
+       </div>
+    </section>
+ 
+     <section class="projects my-3 py-3" id="projects">
+        <div class="container my-2 p-2">
+              <h2 class="text-center my-2 pb-5" >My Project's <i class="fa fa-hand-spock-o text-success"></i></h2>
+          <div class="row">
+            <div class="col-sm-4 col-md-4 col-sm-12 col-12 col-bg-success my-1 py-5" data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000">
+                
+                <div class="card mx-auto text-center cpc text-white p-2 rounded-1 bsc" style="width:300px; height: 16rem;font-size:18px; font-family:'Overpass';">
+                    <img src="cake.png" class="card-img-top img-fluid " alt="..." style="height:160px;">
+                    <div class="my-0 pt-1">
+                        <p class="text-center fs-5 fw-bolder m-0 py-2">The Cakeland</p>
+                        <button type="button" class="btn btn-outline-dark mt-2 ccolor mb-2"><a class="text-white text-decoration-none" href="https://github.com/adityamkr/cakeland">View Sourcecode </a><i class="fa fa-github"></i></button>
+                        
+                    </div>
+                     
+                  </div>
+
+            </div>
+            <div class="col-sm-4 col-md-4 col-sm-12 col-12 col-bg-success my-1 py-5" data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000">
+                
+                <div class="card mx-auto text-center cpc  text-white p-2 rounded-1 bsc" style="width:300px; height: 16rem;font-size:18px; font-family:'Overpass';">
+                    <img src="bookstore.png" class="card-img-top img-fluid" alt="..." style="height:160px;">
+                    <div class="my-0 pt-1">
+                        <p class="text-center fs-5 fw-bolder m-0 py-2">Book Store</p>
+                        <button type="button" class="btn btn-outline-dark mt-2 ccolor mb-2"><a class="text-white text-decoration-none" href="https://github.com/adityamkr/Book-store">View Sourcecode </a><i class="fa fa-github"></i></button>
+                        
+                    </div>
+                     
+                  </div>
+
+            </div>
+
+            <div class="col-sm-4 col-md-4 col-sm-12 col-12 col-bg-success my-1 py-5" data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000">
+                
+                <div class="card mx-auto text-center cpc text-white p-2 rounded-1 bsc" style="width:300px; height: 16rem;font-size:18px; font-family:'Overpass';">
+                    <img src="technoweb.png" class="card-img-top img-fluid" alt="..." style="height:160px;">
+                    <div class="my-0 pt-1">
+                        <p class="text-center fs-5 fw-bolder m-0 py-2">TechnoWeb Portfolio</p>
+                        <button type="button" class="btn btn-outline-dark mt-2 ccolor mb-2"><a class="text-white text-decoration-none" href="https://github.com/adityamkr/BS">View Sourcecode </a><i class="fa fa-github"></i></button>
+                        
+                    </div>
+                     
+                  </div>
+
+            </div>
+
+            <div class="col-sm-4 col-md-4 col-sm-12 col-12 col-bg-success my-1 py-5" data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000">
+                
+                <div class="card mx-auto text-center cpc text-white p-2 rounded-1 bsc" style="width:300px; height: 16rem;font-size:18px; font-family:'Overpass';">
+                    <img src="at.png" class="card-img-top img-fluid" alt="..." style="height:160px;">
+                    <div class="my-0 pt-1">
+                        <p class="text-center fs-5 fw-bolder m-0 py-2">ATM Management System</p>
+                        <button type="button" class="btn btn-outline-dark mt-2 ccolor mb-2"><a class="text-white text-decoration-none" href="https://github.com/adityamkr/ATM-Management-System">View Sourcecode </a><i class="fa fa-github"></i></button>
+                        
+                    </div>
+                     
+                  </div>
+
+            </div>
+
+            <div class="col-sm-4 col-md-4 col-sm-12 col-12 col-bg-success my-1 py-5" data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000">
+                
+                <div class="card mx-auto text-center cpc text-white p-2 rounded-1 bsc" style="width:300px; height: 16rem;font-size:18px; font-family:'Overpass';">
+                    <img src="tictac.png" class="card-img-top img-fluid" alt="..." style="height:160px;">
+                    <div class="my-0 pt-1">
+                        <p class="text-center fs-5 fw-bolder m-0 py-2">Tic-Tac-Toe</p>
+                        <button type="button" class="btn btn-outline-dark mt-2 ccolor mb-2"><a class="text-white text-decoration-none" href="https://github.com/adityamkr/Tic-tac-toe">View Sourcecode </a><i class="fa fa-github"></i></button>
+                        
+                    </div>
+                     
+                  </div>
+
+            </div>
+
+            <div class="col-sm-4 col-md-4 col-sm-12 col-12 col-bg-success my-1 py-5" data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000">
+                
+                <div class="card mx-auto text-center cpc text-white p-2 rounded-1 bsc" style="width:300px; height: 16rem;font-size:18px; font-family:'Overpass';">
+                    <img src="desi.png" class="card-img-top img-fluid" alt="..." style="height:160px;">
+                    <div class="my-0 pt-1">
+                        <p class="text-center fs-5 fw-bolder m-0 py-2">Hotel Website</p>
+                        <button type="button" class="btn btn-outline-dark mt-2 ccolor mb-2"><a class="text-white text-decoration-none" href="https://github.com/adityamkr/Desi-tadka">View Sourcecode </a><i class="fa fa-github"></i></button>
+                        
+                    </div>
+                     
+                  </div>
+
+            </div>
+
+            <div class="col-sm-4 col-md-4 col-sm-12 col-12 col-bg-success my-1 py-5" data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000">
+                
+                <div class="card mx-auto text-center cpc text-white p-2 rounded-1 bsc" style="width:300px; height: 16rem;font-size:18px; font-family:'Overpass';">
+                    <img src="todos.png" class="card-img-top img-fluid" alt="..." style="height:160px;">
+                    <div class="my-0 pt-1">
+                        <p class="text-center fs-5 fw-bolder m-0 py-2">To Do's List</p>
+                        <button type="button" class="btn btn-outline-dark mt-2 ccolor mb-2"><a class="text-white text-decoration-none" href="https://github.com/adityamkr/Todolist">View Sourcecode </a><i class="fa fa-github"></i></button>
+                        
+                    </div>
+                     
+                  </div>
+
+            </div>
+          </div>
+        </div>
+     </section>
+
+     <section class="contacts my-4 " id="contacts">
+        <div class="container  pt-5 pb-3 text-center ">
+            <h3 class="text-center ms-3 my-3 pb-5">Let's Connect <span class="ms-2"><i class="fa fa-handshake-o text-warning"></i></span></h3>
+        
+            <div class="row pt-2 " data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom" >
+                
+            
+                
+               <div class="cdiv">
+                <div class="col-12 col-md-12  my-4 ">
+                
+                    <label for="" class="fs-5 mx-2 px-2">Enter Name</label>
+                    <input type="text" >
+                   
+                </div>
+                
+                <div class="col-12 col-md-12   my-5 pe-2">
+                    <label for="" class="fs-5  ps-3  ms-3 ">Enter Email</label>
+                    <input type="text form-control" style="width:210px;" class="ms-3 px-2 me-1" >
+          
+                </div>
+                
+                <div class="col-12 col-md-12  my-4 ">
+                     <textarea name="" id="" cols="30" rows="5" class="ms-3 p-2 mt-4" placeholder="Write Message"></textarea>
+                </div>
+
+                <div class="my-2 pt-2">
+                    <button type="button" onclick="sendmsg()" class="btn btn-danger" data-toggle="button" aria-pressed="false" autocomplete="off">
+                        Send Message
+                        <i class="fa fa-paper-plane"></i>
+                      </button>
+                </div>
+                
+               </div>
+
+            </div>
+        </div> 
+     </section>
+
+      <div class="container-fluid">
+         <h4 class="m-auto  py-2 text-center" id="owner">Developed by- Aditya Matkar</h4>
+      </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+          </script>
+
+  <script>
+    function sendmsg()
+    {
+      alert("Message sending code is yet to be written...");
+    }
+  </script>
+</body>
+</body>
+
+</html>
